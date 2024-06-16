@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical"
+    tools:context=".settings.SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo"
+            android:importantForAccessibility="no"
+            android:src="@drawable/baseline_today_24" />
+
+        <TextView
+            style="@style/txDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/DailyTracker"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="@string/account_menu"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorPrimary" />
+
+
+    <TextView
+        android:id="@+id/tvSelectTopics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:text="@string/select_topics"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="8dp"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="@string/account_menu"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/selectPrimaryColor"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <RadioGroup
+        android:id="@+id/themeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/themeDefaultRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_text"
+            android:buttonTint="?attr/colorPrimary"
+            android:textColor="?attr/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/themeRedRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red"
+            android:buttonTint="?attr/colorPrimary"
+            android:textColor="?attr/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/themeGreenRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/green"
+            android:buttonTint="?attr/colorPrimary"
+            android:textColor="?attr/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/themeBlueRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue"
+            android:buttonTint="?attr/colorPrimary"
+            android:textColor="?attr/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/themeOrangeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orange"
+            android:buttonTint="?attr/colorPrimary"
+            android:textColor="?attr/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/themeBlackRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/black"
+            android:buttonTint="?attr/colorPrimary"
+            android:textColor="?attr/colorPrimary" />
+
+    </RadioGroup>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="@string/account_menu"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorPrimary" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/shape_list">
+
+        <TextView
+            android:id="@+id/tvNotifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:text="@string/diary_notifications"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchNotifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/tvNotifications"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:layout_marginEnd="32dp"
+            app:thumbTint="?attr/colorPrimary"
+            app:trackTint="?attr/colorAccent"
+            android:textColor="?attr/colorSecondary"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="@string/account_menu"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorPrimary" />
+
+</LinearLayout>

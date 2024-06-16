@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#FF4A6572</color>
+    <color name="primaryShadow">#804A6572</color>
+    <color name="secondary">#FF232F34</color>
+    <color name="secondaryShadow">#80232F34</color>
+    <color name="tertiary">#FFF9AA33</color>
+    <color name="tertiaryShadow">#80F9AA33</color>
+    <color name="background">#FFedf0f2</color>
+
+    <color name="nightPrimary">#C3EDF0F2</color>
+    <color name="nightSecondary">#FF4A6572</color>
+    <color name="nightTertiary">#BEF9AA33</color>
+    <color name="nightBackground">#FF232F34</color>
+
+    <color name="primaryRed">#980537</color>
+    <color name="primaryBlue">#016B9E</color>
+    <color name="primaryGreen">#40673C</color>
+    <color name="primaryOrange">#AE8954</color>
+    <color name="primaryBlack">#000000</color>
+    <color name="primaryWhite">#ffffff</color>
+
+    <color name="nightPrimaryRed">#F8A6A6</color>
+    <color name="nightPrimaryBlue">#B2D9EC</color>
+    <color name="nightPrimaryGreen">#C8F6C4</color>
+    <color name="nightPrimaryOrange">#F6DFBD</color>
+    <color name="nightPrimaryBlack">#000000</color>
+    <color name="nightPrimaryWhite">#ffffff</color>
+
+</resources>

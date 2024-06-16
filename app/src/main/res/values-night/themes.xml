@@ -1,0 +1,96 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DailyTracker.Night" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nightPrimary</item>
+        <item name="colorSecondary">@color/nightSecondary</item>
+        <item name="colorTertiary">@color/nightTertiary</item>
+        <item name="colorAccent">#3D494E</item>
+        <item name="background">@color/nightBackground</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nightPrimary</item>
+        <item name="colorSecondary">@color/nightSecondary</item>
+        <item name="colorTertiary">@color/nightTertiary</item>
+        <item name="colorAccent">#3D494E</item>
+        <item name="background">@color/nightBackground</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppThemeRed" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nightPrimaryRed</item>
+        <item name="colorAccent">#3D494E</item>
+
+    </style>
+
+    <style name="AppThemeBlue" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nightPrimaryBlue</item>
+        <item name="colorAccent">#3D494E</item>
+
+    </style>
+
+    <style name="AppThemeGreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nightPrimaryGreen</item>
+        <item name="colorAccent">#3D494E</item>
+
+    </style>
+
+    <style name="AppThemeOrange" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nightPrimaryOrange</item>
+        <item name="colorAccent">#3D494E</item>
+
+    </style>
+
+    <style name="AppThemeBlack" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nightPrimaryWhite</item>
+        <item name="colorAccent">#3D494E</item>
+
+    </style>
+
+    <style name="Theme.DailyTracker" parent="Base.Theme.DailyTracker" />
+
+    <style name="txDefault">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="bgDefault">
+        <item name="android:background">?attr/background</item>
+    </style>
+
+    <style name="btDefault">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="cardDefaultTitle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingHorizontal">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Theme.DailyTracker.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/nightPrimary</item>
+        <item name="colorSecondary">@color/nightSecondary</item>
+        <item name="colorTertiary">@color/nightTertiary</item>
+        <item name="colorAccent">#3D494E</item>
+        <item name="background">@color/nightBackground</item>
+    </style>
+
+    <style name="Theme.DailyTracker.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DailyTracker.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

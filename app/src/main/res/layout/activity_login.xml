@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical"
+    tools:context=".login.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="112sp"
+            android:background="?attr/colorTertiary" />
+
+        <TextView
+            style="@style/txDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/DailyTracker"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/baseline_today_24" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp">
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/txDefault"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/emailLogin"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textColorHint="@color/primaryShadow" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            style="@style/txDefault"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/baseline_password_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/passLogin"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textColorHint="@color/primaryShadow" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/shape_bt"
+            android:backgroundTint="?attr/colorPrimary"
+            android:paddingHorizontal="40sp"
+            android:paddingVertical="12sp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/regular"
+            android:onClick="login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:padding="8sp"
+            android:text="@string/remember"
+            android:layout_gravity="end"
+            android:textColor="?attr/colorTertiary"
+            android:onClick="forgotPass"/>
+
+        <LinearLayout
+            android:id="@+id/lyTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accept"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/terms"
+                android:textColor="?attr/colorTertiary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:onClick="goTerms"/>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="?attr/colorPrimary" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16sp" />
+
+        <android.widget.Button
+            style="@style/btDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edit_text"
+            android:drawableLeft="@drawable/google_logo"
+            android:paddingHorizontal="32sp"
+            android:text="@string/loginGoogle"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:onClick="callLoginGoogle"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
